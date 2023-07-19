@@ -1,0 +1,48 @@
+
+
+body{
+    
+    background: #000;
+}
+.heart{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+i{
+    color: #000;
+    font-size: 110px;
+    animation: beat 0.9s infinite;
+    text-shadow:
+        0 0 5px red,
+        0 0 45px red,
+        0 0 90px red
+    ;
+}
+@keyframes beat{
+    0%{
+        transform: scale(1);
+    }
+    20%{
+        transform: scale(1.15);
+    }
+    40%{
+        transform: scale(1.4);
+    }
+}
+
+/* Centered text styles */
+
+/* Centered text styles */
+.centered-text {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 999; /* Ensures the text appears on top of other elements */
+    color: #fff; /* Sets the text color to white */
+  }
